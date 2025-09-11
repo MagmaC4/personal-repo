@@ -1,0 +1,26 @@
+<html>
+    <!-- Comment -->>
+    <!-- Head is at beginning of the webpage, stores info not displayed-->
+    <head>
+        <!-- Title-->>
+        <title> This is my webpage </title>
+
+    </head>
+
+    <body id="body" style="background-color: red;">
+
+        <button id="hello"> Change Color </button>
+        <script>
+            (
+                function(){
+                    document.getElementById("hello").onclick = function(){
+                        document.getElementById("body").style = "background-color: blue";
+                    }
+                }
+            )();
+        </script>
+
+
+    </body>
+    
+</html>
