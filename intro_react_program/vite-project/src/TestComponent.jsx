@@ -1,18 +1,19 @@
 import { useState } from 'react'
 
 function TestComponent() {
-    const message = "I'm a variable that doesn't get used";
+    const [buttonText, changeText] = useState("Click Me");
     
     const [num, setNum] = useState(3);
+
+    const handleClick = () => {
+        changeText("You clicked me! Ouch!")
+    }
     
     return (
         <>
-            {/* This is a JSX comment */}
-
-            <p>My favorite number is {num}</p>
-
             {/* Functions must be called by events in jsx, such as a button click */}
-            <button onClick={() => setNum(7)}>Change mind</button>
+            <button onClick = {handleClick}> {buttonText} </button>
+
         </>
     )
 }
