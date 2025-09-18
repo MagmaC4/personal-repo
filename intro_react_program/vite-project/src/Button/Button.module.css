@@ -1,4 +1,5 @@
 /* This css file is a module, meaning it must be imported to be applied */
+/* Modules will generate a unique className for elements, which is useful for large projects */
 
 .button{
   background-color: hsl(200,100%,50%);

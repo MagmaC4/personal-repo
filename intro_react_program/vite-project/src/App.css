@@ -1,0 +1,11 @@
+:root{
+    background-color: rgb(34, 34, 41);
+}
+
+.title{
+    font-family: Arial, sans-serif;
+    color: rgba(211, 211, 211, 0.897);
+    
+    display: flex; /* set up flex */
+    justify-content: center; /* horizontal alignment using flex */
+}
