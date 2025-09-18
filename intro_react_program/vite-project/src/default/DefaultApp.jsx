@@ -1,7 +1,15 @@
 // Code within App component when project was started
 // Saving the contents to reference how React websites are made
 
-function default_page(){
+// Dependencies
+import { useState } from 'react'
+import './DefaultApp.css'
+
+// Images
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+
+function DefaultApp(){
     const [count, setCount] = useState(0)
     
     return (
@@ -30,4 +38,4 @@ function default_page(){
     )
 }
 
-export default default_page
+export default DefaultApp

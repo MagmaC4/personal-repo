@@ -1,0 +1,10 @@
+/* This css file is a module, meaning it must be imported to be applied */
+
+.button{
+  background-color: hsl(200,100%,50%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none; /* remove border */
+  cursor: pointer; /* Change mouse to pointer when button is hovered over */
+}

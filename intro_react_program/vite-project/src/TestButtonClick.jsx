@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function TestComponent() {
+function TestButtonClick() {
     const [buttonText, changeText] = useState("Click Me");
     
     const [num, setNum] = useState(3);
@@ -13,9 +13,8 @@ function TestComponent() {
         <>
             {/* Functions must be called by events in jsx, such as a button click */}
             <button onClick = {handleClick}> {buttonText} </button>
-
         </>
     )
 }
 
-export default TestComponent
+export default TestButtonClick
