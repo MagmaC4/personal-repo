@@ -3,12 +3,12 @@
 
 .card{
   max-width: 800px; /* max width of entire card */
-  background-color: rgb(112, 116, 129);
+  background-color: rgb(47, 47, 56);
   border: 1px solid rgba(0, 0, 0, 0.144);
   border-radius: 10px; /* Rounds the corners */
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* params: horizontal offset, vertical offset, blur radius, color */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); /* params: horizontal offset, vertical offset, blur radius, color */
   padding: 20px; /* pixels between elements and border */
-  margin: 10px; /* pixels between the card and other elements */
+  margin: 25px; /* pixels between the card and other elements */
   
   margin-left: auto; /* center element with webpage */
   margin-right: auto; /* center element with webpage */
@@ -19,34 +19,41 @@
   /* I'm using the flex layout to display text beside an image */
   /* Elements with flex are sized relative to the ratio of other flex elements */
   display: flex;
+}
 
+.card:hover{
+  filter: brightness(105%);
 }
 
 .card .cardLeft{
-    flex: 5; 
-    padding-right: 50px;
+  flex: 5; 
+  padding-right: 50px;
 }
 
 .card .cardRight{
-    flex: 4; 
+  flex: 4; 
 }
 
 .card .cardImage{
   max-width: 100%; /* Scale image width with card width */
-  height: auto;
-  border-radius: 5%; /* Rounds the corners of the image */
   margin-bottom: 10px; /* Adds small margin buffer from bottom of image */ 
-  
+  border-radius: 5px; /* Rounds the corners of the image */
+  border: 2px solid rgb(40, 40, 48);
+  height: auto;
 }
 
 .card .cardTitle{
   font-family: Arial, sans-serif; /* First font is displayed. Second font is backup */
   margin: 0;
-  color: rgba(0, 0, 0, 0.644) /* Font color */
+  color: rgba(255, 255, 255, 0.8) /* Font color */
 }
 
 .card .cardText{
   font-family: Arial, sans-serif;
-  color: rgba(0, 0, 0, 0.664)
+  color: rgba(255, 255, 255, 0.664)
 }
 
+/* hyperlink elements */
+a{
+  text-decoration:none; /* remove underline from text */
+}
